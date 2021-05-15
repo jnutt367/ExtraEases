@@ -1,9 +1,9 @@
  gsap.from(".rectangles", {
-     yPercent: 100,
+     yPercent: 1000,
      ease: "expo.easeInOut",
      duration: 2,
      stagger: {
-         amount: 1,
+         each: 3,
          from: "random"
      },
      scrollTrigger: "#wizard"
