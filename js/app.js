@@ -3,7 +3,7 @@
      ease: "expo.easeInOut",
      duration: 2,
      stagger: {
-         each: 3,
+         amount: 3,
          from: "random"
      },
      scrollTrigger: "#wizard"
