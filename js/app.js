@@ -27,3 +27,15 @@ if (animationIsOkay) {
         }
     });
 }
+
+gsap.to("#second-wobble", {
+    xPercent: 100,
+    yPercent: 100,
+    duration: 5,
+    fill: "white",
+    scrollTrigger: {
+        trigger: "#wizard",
+        pin: true,
+        scrub: 1
+    }
+});
