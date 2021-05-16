@@ -1,7 +1,7 @@
 gsap.from(".rectangles", {
     yPercent: 100,
     ease: "expo.easeInOut",
-    duration: 2,
+    duration: 5,
     stagger: {
         amount: 1,
         from: "random"
@@ -18,7 +18,8 @@ if (animationIsOkay) {
     gsap.from("#wobble", {
         xPercent: 100,
         yPercent: 100,
-        duration: 2,
+        duration: 5,
+        fill: "blue",
         scrollTrigger: {
             trigger: "#piggies",
             pin: true,
