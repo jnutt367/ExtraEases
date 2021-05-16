@@ -1,28 +1,28 @@
- gsap.from(".rectangles", {
-     xPercent: 1000,
-     ease: "expo.easeInOut",
-     duration: 2,
-     stagger: {
-         each: 4,
-         from: "random"
-     },
-     scrollTrigger: "#wizard"
- });
+gsap.from(".rectangles", {
+    yPercent: 100,
+    ease: "expo.easeInOut",
+    duration: 2,
+    stagger: {
+        amount: 1,
+        from: "random"
+    },
+    scrollTrigger: "#piggies"
+});
 
- const animationIsOkay = window.matchMedia(
-     "(prefers-reduced-motion: no-preference)"
- ).matches;
+const animationIsOkay = window.matchMedia(
+    "(prefers-reduced-motion: no-preference)"
+).matches;
 
- // turn this on to prevent animation for people who don't want it
- if (animationIsOkay) {
-     gsap.from("#wobble", {
-         xPercent: 100,
-         yPercent: 100,
-         duration: 2,
-         scrollTrigger: {
-             trigger: "#wizard",
-             pin: true,
-             scrub: 1
-         }
-     });
- }
+// turn this on to prevent animation for people who don't want it
+if (animationIsOkay) {
+    gsap.from("#wobble", {
+        xPercent: 100,
+        yPercent: 100,
+        duration: 2,
+        scrollTrigger: {
+            trigger: "#piggies",
+            pin: true,
+            scrub: 1
+        }
+    });
+}
